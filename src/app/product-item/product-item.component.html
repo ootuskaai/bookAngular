@@ -1,0 +1,11 @@
+<div class="thumbnil">
+  <img src="https://placehold.it/320x150">
+  <div class="caption">
+    <h4 class="float-right">{{ product.Price | currency}}</h4>
+    <h4><a [routerLink]="['/product',product.Id]">{{ product.Title}}</a></h4>
+    <p>{{ product.Description}}</p>
+  </div>
+  <div class="ratings">
+    <nga-stars [rating] = "product.Rating"></nga-stars>
+  </div>
+</div>
