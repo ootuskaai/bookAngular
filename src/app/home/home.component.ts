@@ -16,5 +16,4 @@ export class HomeComponent implements OnInit {
     this.Products = this.productService.GetProducts();
     console.debug("test: ", this.Products);
   }
-
 }

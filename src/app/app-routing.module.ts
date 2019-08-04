@@ -6,16 +6,22 @@ import { Error404Component } from './error404/error404.component';
 import { ProductDescriptionComponentComponent } from './product-description-component/product-description-component.component';
 import { SellerInfoComponentComponent } from './seller-info-component/seller-info-component.component';
 
+// const routes: Routes = [
+//   { path:'', component: HomeComponent },
+//   { path:'product/:id', component: ProductDetailComponent, 
+//     children: [
+//       { path:'', component: ProductDescriptionComponentComponent},
+//       { path: 'seller/:id', component: SellerInfoComponentComponent}
+//     ]
+//   },
+//   { path:'**', component: Error404Component}
+// ];
+
 const routes: Routes = [
-  { path:'', component: HomeComponent },
-  { path:'product/:id', component: ProductDetailComponent, 
-    children: [
-      { path:'', component: ProductDescriptionComponentComponent},
-      { path: 'seller/:id', component: SellerInfoComponentComponent}
-    ]
-  },
-  { path:'**', component: Error404Component}
-];
+  { path: '', component: HomeComponent},
+  { path: 'products/:productId', component: ProductDetailComponent},
+  { path: '**', component: Error404Component}
+]       
 
 //export const routing = RouterModule.forRoot(routes);
 

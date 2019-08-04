@@ -6,9 +6,10 @@ import { Product } from '../shared/product.service';
   templateUrl: './product-item.component.html',
   styleUrls: ['./product-item.component.scss']
 })
+
 export class ProductItemComponent implements OnInit {
 
-  @Input() product: Product;
+  @Input() public Product: Product;
 
   constructor() { }
 

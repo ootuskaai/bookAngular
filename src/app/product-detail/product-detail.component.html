@@ -1,3 +1,11 @@
-<!-- <p>
-  product-detail works!
-</p> -->
+<div class="thumbnail">
+  <img src="http://placehold.it/820x320" alt="sample image">
+  <div>
+    <h4 class="float-right">{{ Product.Price }}</h4>
+    <h4>{{ Product.Title }}</h4>
+    <p>{{ Product.Description }}</p>
+  </div>
+  <div class="ratings">
+    <p><nga-stars [rating] = "Product.Rating"></nga-stars></p>
+  </div>
+</div>
